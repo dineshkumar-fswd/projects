@@ -1,0 +1,184 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Latha", "Noto Sans Tamil", "Arial", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  background: url("https://png.pngtree.com/png-vector/20230206/ourmid/pngtree-thiruvalluvar-vector-design-png-image_6587371.png"),
+    url("https://png.pngtree.com/png-vector/20230206/ourmid/pngtree-thiruvalluvar-vector-design-png-image_6587371.png");
+  background-size: 350px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, right center;
+  background-attachment: fixed;
+}
+
+/* Container */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+h1 {
+  font-size: 1.8rem;
+  color: #4b0082;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Intro Paragraph */
+.intro {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #444;
+  text-align: justify;
+}
+
+/* Input and Button Styling */
+#num,
+#btn {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  margin: 5px;
+}
+
+#num {
+  width: 500px;
+  transition: border-color 0.3s ease;
+}
+
+#num:focus {
+  border-color: #4b0082;
+  outline: none;
+}
+
+#btn {
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+  background-color: #6a0dad;
+}
+
+/* Center Input and Button */
+#num,
+#btn {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container > #num,
+.container > #btn {
+  display: inline-block;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Result Styling */
+#result {
+  margin-top: 20px;
+  background: #fdf6ff;
+  padding: 20px;
+  border-left: 5px solid #4b0082;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* Kural Lines */
+#result h3 {
+  font-size: 1.3rem;
+  color: #800000;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Commentary & Translation */
+#result p {
+  margin: 8px 0;
+}
+#result p:nth-of-type(2) {
+  font-size: 14px;
+  text-align: justify;
+}
+#result p:nth-of-type(3) {
+  color: #006400;
+  text-align: justify;
+  font-size: 14px;
+} /* Mu. Varadarajan */
+#result p:nth-of-type(4) {
+  color: #8b0000;
+  font-size: 14px;
+  text-align: justify;
+} /* Salaman Pappaiya */
+#result p:nth-of-type(5) {
+  color: #1e90ff;
+  font-size: 14px;
+  text-align: justify;
+} /* Mu. Karunanidhi */
+#result p:nth-of-type(6) {
+  color: #333;
+  text-align: justify;
+} /* Translation */
+#result p:nth-of-type(7) {
+  color: #555;
+  text-align: justify;
+} /* Explanation */
+
+/* Error Message */
+p[style*="color:red"] {
+  background-color: #ffe6e6;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    background-position: bottom;
+    background-size: 300px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro {
+    font-size: 0.95rem;
+  }
+
+  #num,
+  #btn {
+    width: 100%;
+    font-size: 0.95rem;
+    margin: 5px 0;
+  }
+
+  #result {
+    font-size: 0.95rem;
+  }
+
+  #result h3 {
+    font-size: 0.7rem;
+  }
+}
