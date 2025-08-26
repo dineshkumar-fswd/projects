@@ -31,8 +31,7 @@ body {
 /* Header */
 h1 {
   font-size: 1.8rem;
-  /* color: #4b0082; */
-  color: black;
+  color: #4b0082;
   margin-bottom: 15px;
   text-align: center;
 }
