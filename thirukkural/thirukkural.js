@@ -7,7 +7,9 @@ let btn = document.getElementById("btn").addEventListener("click", async () => {
     return;
   }
   try {
-    let response = await fetch("./thirukkural.json");
+    let response = await fetch(
+      "https://dineshkumar-fswd.github.io/projects/thirukkural/thirukkural.json"
+    );
     let data = await response.json();
     if (isNaN(num) || num < 1 || num > data.length) {
       result_div.innerHTML = `<p style="color:red">1 முதல் 1330 வரை உள்ள எண்ணை உள்ளிடவும் / Enter number between 1 and 1330.</p>`;
